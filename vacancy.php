@@ -81,9 +81,9 @@ if (($handle = fopen("vacancy.csv", "r")) !== false) {
         );
 
         if ($PRODUCT_ID = $el->Add($arLoadProductArray))
-            echo "New element with ID: " . $PRODUCT_ID;
+            echo "New element with ID: " . $PRODUCT_ID . "<br>";
         else {
-            echo "Error: " . $el->LAST_ERROR;
+            echo "Error: " . $el->LAST_ERROR . "<br>";
         }
     }
 }
